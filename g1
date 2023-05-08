@@ -1,3 +1,34 @@
+1
+2
+3
+4
+5
+6
+7
+8
+8
+9
+e
+t
+y
+d
+t
+e
+t
+e
+t
+e
+t
+e
+
+
+
+
+
+
+
+
+
 We create commit R, which actual file content is identical to that of merge commit M above. But, we get rid of commit E, like it never existed (denoted by dots - vanishing line). Because of this obliteration, E should be local to developer Ed and should have never been pushed to any other repository. Advantage of rebase is that diamond shape is avoided, and history stays nice straight line - most developers love that!
 
 Nice illustrations. However, I do not fully agree with the positive tone that rebase is handled. In both merge and rebase conflicts can occur that need manual resolution. And as always when programmers are involved there is a non-neglectable chance of errors aka bugs. If a merge error happens the whole team or community can see the merge and verify whether a bug was introduced there. The history of the rebase stays in 1 developer's repo and even there it has only limited lifetime in the reflog. It might look nicer, but nobody else can see as easily what went wrong
